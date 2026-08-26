@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://ajin-robot-hand.github.io/docs/blog/category/erdoslibrary/">
+        <link rel="canonical" href="https://ajin-robot-hand.github.io/docs/blog/2026/08/dynamixel-%EC%A0%9C%EC%96%B4-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%95%88%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-ppt/">
       
       
-        <link rel="next" href="../yeonjunky/">
+        <link rel="next" href="../%EC%A7%80%EB%82%9C-2%EC%A3%BC-%EC%8B%A4%EC%A0%9C-dynamixel-%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B0%98%EA%B3%BC-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%97%86%EB%8A%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>erdoslibrary - Robot Hand Team Blog</title>
+        <title>Dynamixel 제어 시스템 구축 및 안전 가이드 - Robot Hand Team Blog</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#erdoslibrary" class="md-skip">
+        <a href="#dynamixel" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="../../.." title="Robot Hand Team Blog" class="md-header__button md-logo" aria-label="Robot Hand Team Blog" data-md-component="logo">
+    <a href="../../../.." title="Robot Hand Team Blog" class="md-header__button md-logo" aria-label="Robot Hand Team Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              erdoslibrary
+              Dynamixel 제어 시스템 구축 및 안전 가이드
             
           </span>
         </div>
@@ -223,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -246,7 +246,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -269,7 +269,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -280,7 +282,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Robot Hand Team Blog" class="md-nav__button md-logo" aria-label="Robot Hand Team Blog" data-md-component="logo">
+    <a href="../../../.." title="Robot Hand Team Blog" class="md-nav__button md-logo" aria-label="Robot Hand Team Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -310,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -389,12 +391,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -474,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2026/" class="md-nav__link">
+      <a href="../../../archive/2026/" class="md-nav__link">
         
   
   
@@ -507,8 +511,6 @@
                 
   
   
-    
-  
   
   
     
@@ -519,11 +521,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -544,7 +546,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -559,41 +561,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    erdoslibrary
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../category/erdoslibrary/" class="md-nav__link">
         
   
   
@@ -609,48 +582,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dynamixel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dynamixel 제어 시스템 구축 및 안전 가이드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ppt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        프로젝트 계획서 PPT
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -665,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../yeonjunky/" class="md-nav__link">
+      <a href="../../../category/yeonjunky/" class="md-nav__link">
         
   
   
@@ -709,6 +640,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -728,21 +661,171 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dynamixel" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dynamixel 제어 시스템 구축 및 안전 가이드
+        1. ⚠️ [중요] 하드웨어 안전 및 전원 관리
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ⚠️ [중요] 하드웨어 안전 및 전원 관리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. 핫플러깅 엄금
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ppt" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-current-bottleneck" class="md-nav__link">
     <span class="md-ellipsis">
       
-        프로젝트 계획서 PPT
+        1.2. 전력 병목(Current Bottleneck) 방지를 위한 분산 배선
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. 유휴 상태 발열 통제 및 장치 보호
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. 외력 통제 및 백래시(Backlash) 방지
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-graceful-shutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. 안전 종료(Graceful Shutdown) 패턴 보장
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 하드웨어 물리 계층 규격
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 하드웨어 물리 계층 규격">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. 통신 인터페이스 매칭 룰
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-daisy-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. 데이지 체인(Daisy-Chain) 버스 토폴로지
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. 전원과 통신의 물리적 분리 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 소프트웨어 제어 아키텍처
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 소프트웨어 제어 아키텍처">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-wizard-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. 위자드(Wizard 2.0)의 한계와 활용
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-sync-write" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Sync Write (동기화 쓰기) 아키텍처 도입
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 프로덕션 레벨 제어 루틴
       
     </span>
   </a>
@@ -758,122 +841,205 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="erdoslibrary">erdoslibrary<a class="headerlink" href="#erdoslibrary" title="Permanent link">&para;</a></h1>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/erdoslibrary.png" alt="erdoslibrary">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-08-26 00:00:00+00:00">2026년 8월 26일</time></li>
-        
-          <li class="md-meta__item">
-            카테고리
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Index로 돌아가기
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="./" class="md-meta__link">erdoslibrary</a></li>
-        
-        
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/erdoslibrary.png" alt="erdoslibrary">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          erdoslibrary
+                        
+                      </strong>
+                      <br>
+                      역할/직무
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    메타데이터
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-08-26 00:00:00+00:00" class="md-ellipsis">2026년 8월 26일</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            카테고리
+                            
+                              <a href="../../../category/erdoslibrary/">erdoslibrary</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              읽는시간 4분
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
-          <li class="md-meta__item">
-            
-              읽는시간 4분
-            
-          </li>
-        
-        
-      </ul>
-      
+        </div>
+      </div>
     </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="dynamixel"><a class="toclink" href="../../2026/08/dynamixel-%EC%A0%9C%EC%96%B4-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%95%88%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C/">Dynamixel 제어 시스템 구축 및 안전 가이드</a></h2>
-<p>이 문서는 Dynamixel 모터 기반의 다관절 하드웨어 시스템을 구축하고, 물리적 손상 없이 안전하게 소프트웨어로 제어하기 위한 프로덕션 레벨의 실무 가이드라인입니다.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2026/08/dynamixel-%EC%A0%9C%EC%96%B4-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%95%88%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C/">
-          계속 읽기
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/erdoslibrary.png" alt="erdoslibrary">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-08-22 00:00:00+00:00">2026년 8월 22일</time></li>
-        
-          <li class="md-meta__item">
-            카테고리
-            
-              <a href="./" class="md-meta__link">erdoslibrary</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              읽는시간 1분
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ppt"><a class="toclink" href="../../2026/08/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-ppt/">프로젝트 계획서 PPT</a></h2>
-<p>8.12 첫 미팅</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2026/08/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-ppt/">
-          계속 읽기
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
+    <article class="md-content__inner md-typeset">
       
         
-          
-
-
-
-<nav class="md-pagination">
   
-</nav>
-        
+
+
+
+  
+    <a href="https://github.com/ajin-robot-hand/docs/edit/master/docs/blog/posts/2026-08-26-hardware_guide.md" title="이 페이지를 편집" class="md-content__button md-icon" rel="edit">
       
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="dynamixel">Dynamixel 제어 시스템 구축 및 안전 가이드<a class="headerlink" href="#dynamixel" title="Permanent link">&para;</a></h1>
+<p>이 문서는 Dynamixel 모터 기반의 다관절 하드웨어 시스템을 구축하고, 물리적 손상 없이 안전하게 소프트웨어로 제어하기 위한 프로덕션 레벨의 실무 가이드라인입니다.</p>
+<!-- more -->
+
+<h2 id="1">1. ⚠️ [중요] 하드웨어 안전 및 전원 관리<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><img width="300" height="400" alt="1000060579" src="https://github.com/user-attachments/assets/51aa676c-7236-4ee5-8aa4-b0a16c2ef1c8" /></p>
+<h3 id="11">1.1. 핫플러깅 엄금<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>이슈:</strong> 전원이 켜진 상태에서 모터 케이블을 꽂거나 뽑으면 순간적인 서지(Surge) 전압이 발생하여 모터 내부 통신 칩(Transceiver)이 영구 손상됨.</li>
+<li><strong>실행 수칙:</strong> 모터를 교체하거나 선을 연결/분리할 때는 <strong>반드시 U2D2 파워 허브 보드의 전원 스위치를 OFF</strong>로 전환할 것.</li>
+</ul>
+<h3 id="12-current-bottleneck">1.2. 전력 병목(Current Bottleneck) 방지를 위한 분산 배선<a class="headerlink" href="#12-current-bottleneck" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>이슈:</strong> 7개의 모터를 하나의 라인(데이지 체인)으로만 길게 연결하면, 첫 번째 케이블이 7개 모터의 최대 부하 전류(최대 약 10A)를 모두 감당하게 되어 단선 및 셧다운 발생.</li>
+<li><strong>실행 수칙:</strong> 허브 보드의 3핀 포트 2개를 활용하여 <strong>병렬로 분산 연결</strong> (예: 포트A에 4개, 포트B에 3개). 소프트웨어 제어 시 논리적 순서에는 전혀 영향을 주지 않음.</li>
+</ul>
+<h3 id="13">1.3. 유휴 상태 발열 통제 및 장치 보호<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>이슈:</strong> 모터의 회전(Torque)을 끄더라도 통신 대기 상태 유지를 위해 제어 기판에 미열이 발생하며, 장시간 전원 인가 시 노이즈로 인한 칩셋 스트레스가 누적됨.</li>
+<li><strong>실행 수칙:</strong> 코드를 실행하지 않는 디버깅 및 대기 시간에는 <strong>U2D2 파워 허브 보드의 전원 스위치를 즉시 OFF</strong>로 전환할 것.</li>
+</ul>
+<h3 id="14-backlash">1.4. 외력 통제 및 백래시(Backlash) 방지<a class="headerlink" href="#14-backlash" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>이슈:</strong> 토크가 인가된 상태(모터가 위치를 유지하려는 상태)에서 기구부를 억지로 꺾으면 내부 엔지니어링 플라스틱/메탈 기어가 마모되어 영구적인 정밀도 하락 발생.</li>
+<li><strong>실행 수칙:</strong> 모터가 힘을 주고 있을 때는 절대 물리적인 외력을 가하여 축을 회전시키지 말 것.</li>
+</ul>
+<h3 id="15-graceful-shutdown">1.5. 안전 종료(Graceful Shutdown) 패턴 보장<a class="headerlink" href="#15-graceful-shutdown" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>이슈:</strong> 프로그램 강제 종료(<code>Ctrl+C</code> 등) 시 포트가 비정상적으로 닫히며 모터가 마지막 토크 상태를 무한히 유지해 과열을 유발함.</li>
+<li><strong>실행 수칙:</strong> 제어 코드 레벨에서 반드시 <code>SIGINT</code> 시그널 핸들러를 구현해, 프로세스 종료 시 <strong>모든 모터의 토크를 0으로 해제하고 포트를 닫도록 아키텍처 구성.</strong></li>
+</ul>
+<hr />
+<h2 id="2">2. 하드웨어 물리 계층 규격<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1. 통신 인터페이스 매칭 룰<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>하드웨어 구성의 기준은 항상 <strong>엔드 디바이스(모터)</strong> 스펙을 따라야 함.</p>
+<ul>
+<li><code>XL430-W250-T</code> 모델의 'T'는 <strong>3핀 TTL 통신</strong>을 의미.</li>
+<li><strong>연결 원칙:</strong> 모터(3핀) ↔ 파워 허브 보드 TTL 포트(3핀) ↔ U2D2 TTL 포트(3핀)로 모든 데이터 경로를 통일해야 함.</li>
+<li><em>참고: 4핀 RS-485(차동 신호, 산업용) 및 4핀 UART(제어기-PC 디버깅용) 포트와 혼용 절대 불가.</em></li>
+</ul>
+<p><img width="300" height="400" alt="1000060577" src="https://github.com/user-attachments/assets/4fc3ce66-aa0c-4dbd-8fc2-01d8a2f11237" /></p>
+<h3 id="22-daisy-chain">2.2. 데이지 체인(Daisy-Chain) 버스 토폴로지<a class="headerlink" href="#22-daisy-chain" title="Permanent link">&para;</a></h3>
+<ul>
+<li>외형은 직렬로 보이나, 내부 회로는 3가닥(VDD, GND, DATA) 선을 공유하는 <strong>병렬 버스(Parallel Bus)</strong> 구조.</li>
+<li>모터의 물리적인 연결 순서는 통신에 무관하므로, 기구부의 관절 가동 범위 확보와 케이블 꼬임 방지에 유리한 동선으로 자유롭게 설계 가능.</li>
+</ul>
+<h3 id="23">2.3. 전원과 통신의 물리적 분리 구조<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<ul>
+<li>통신 모듈(U2D2)은 PC에서 5V를, 파워 허브는 SMPS 어댑터에서 12V를 독립적으로 공급받음.</li>
+<li>따라서 파워 허브의 물리적 스위치를 끄더라도 PC와의 시리얼 포트 세션(<code>/dev/tty.*</code> 또는 <code>/dev/cu.*</code>)은 끊어지지 않고 유지되므로 재연결 등 불필요한 컨텍스트 스위칭이 필요 없음.</li>
+</ul>
+<hr />
+<h2 id="3">3. 소프트웨어 제어 아키텍처<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31-wizard-20">3.1. 위자드(Wizard 2.0)의 한계와 활용<a class="headerlink" href="#31-wizard-20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Dynamixel Wizard 2.0은 단일 노드 진단 및 초기 설정용 유틸리티로 다관절 실시간 제어에 부적합함.</li>
+<li><strong>스캔 병목 제거:</strong> 위자드 스캔 시 [Options]에서 ①타겟 포트 단일화, ②통신 속도(57600), ③Protocol 2.0, ④ID 범위(0~10)를 제한하여 탐색 시간을 초 단위로 최적화할 것.</li>
+<li><strong>점유 해제:</strong> 설정 완료 후 <strong>반드시 'Disconnect(연결 끊기)'를 수행</strong>하여 OS 레벨의 포트 점유(Lock)를 해제해야 메인 제어 코드에서 에러가 발생하지 않음.</li>
+</ul>
+<h3 id="32-sync-write">3.2. Sync Write (동기화 쓰기) 아키텍처 도입<a class="headerlink" href="#32-sync-write" title="Permanent link">&para;</a></h3>
+<ul>
+<li>7개 관절의 통신 지연(Delay)을 0에 가깝게 만들고 완벽히 동시에 구동하기 위한 필수 프로덕션 표준.</li>
+<li><strong>동작 원리:</strong> SDK를 통해 7개 모터의 목표 위치 데이터를 메모리 상에서 하나의 거대한 패킷으로 조립한 뒤, 시리얼 버스 망에 단 1회만 브로드캐스팅(Broadcasting). 7개 모터가 이를 동시에 파싱하여 구동 시작.</li>
+</ul>
+<hr />
+<h2 id="4">4. 프로덕션 레벨 제어 루틴<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>소프트웨어 제어 로직과 하드웨어의 물리적 상태를 안전하게 동기화하는 5단계 워크플로우입니다.</p>
+<ol>
+<li><strong>물리적 전원 ON (부팅 딜레이 적용)</strong></li>
+<li>스위치 인가 후 7개 모터 내부 MCU 부팅(LED 깜빡임)이 끝날 때까지 통신 개시 전 약 1~2초의 대기 시간을 확보할 것.</li>
+<li><strong>포트 개방 및 초기화 (Fail-fast 패턴)</strong></li>
+<li>단순 포트 개방에 그치지 않고, 제어 시작 전 7개의 모터 ID에 <code>Ping</code>을 날려 정상 응답을 검증. 하나라도 누락 시 즉시 에러 반환 후 종료.</li>
+<li><strong>제어 및 테스트 (Sync Write 적용)</strong></li>
+<li>목표 위치 및 속도 명령 전송 시 통신 병목을 막기 위해 단일 패킷 브로드캐스팅 수행.</li>
+<li><strong>안전 종료 (인터럽트 처리)</strong></li>
+<li>제어 완료 또는 <code>Ctrl+C</code> 입력 시 시스템 셧다운 루틴이 개입하여 모든 모터의 토크를 해제(0).</li>
+<li><strong>물리적 전원 OFF</strong></li>
+<li>모터의 힘이 풀린 것을 물리적으로 확인한 후 파워 허브의 전원 차단.</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
   </div>
 
           
@@ -931,10 +1097,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "content.code.copy", "content.action.edit", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "content.code.copy", "content.action.edit", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
