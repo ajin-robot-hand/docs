@@ -1,4 +1,5 @@
 ---
+title: Dynamixel 제어 시스템 구축 및 안전 가이드
 date: 2026-08-26
 categories:
   - erdoslibrary
@@ -6,8 +7,11 @@ authors:
   - erdoslibrary
 ---
 
-
 # Dynamixel 제어 시스템 구축 및 안전 가이드
+
+이 문서는 Dynamixel 모터 기반의 다관절 하드웨어 시스템을 구축하고, 물리적 손상 없이 안전하게 소프트웨어로 제어하기 위한 프로덕션 레벨의 실무 가이드라인입니다.
+
+<!-- more -->
 
 ## 1. ⚠️ [중요] 하드웨어 안전 및 전원 관리
 
@@ -48,7 +52,7 @@ authors:
 
 - `XL430-W250-T` 모델의 'T'는 **3핀 TTL 통신**을 의미.
 - **연결 원칙:** 모터(3핀) ↔ 파워 허브 보드 TTL 포트(3핀) ↔ U2D2 TTL 포트(3핀)로 모든 데이터 경로를 통일해야 함.
-- _참고: 4핀 RS-485(차동 신호, 산업용) 및 4핀 UART(제어기-PC 디버깅용) 포트와 혼용 절대 불가._
+- *참고: 4핀 RS-485(차동 신호, 산업용) 및 4핀 UART(제어기-PC 디버깅용) 포트와 혼용 절대 불가.*
 
 <img width="300" height="400" alt="1000060577" src="https://github.com/user-attachments/assets/4fc3ce66-aa0c-4dbd-8fc2-01d8a2f11237" />
 
