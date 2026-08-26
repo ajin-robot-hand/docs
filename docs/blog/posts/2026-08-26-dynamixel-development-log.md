@@ -15,7 +15,7 @@ authors:
 ## 한눈에 보기
 
 | 저장소 | 주요 변경 |
-| --- | --- | --- |
+| --- | --- |
 | `util-scripts` | 장치 탐색·상태 조회 스크립트, XL430 제어 테이블, 하드웨어 안전 가이드 |
 | `MockPortHandler` | Protocol 2.0/XL430 mock, 포트 API, 단위 테스트, 한·영 README |
 
