@@ -1,3 +1,11 @@
+---
+date: 2026-08-26
+categories:
+  - erdoslibrary
+authors:
+  - erdoslibrary
+---
+
 
 # Dynamixel 제어 시스템 구축 및 안전 가이드
 
