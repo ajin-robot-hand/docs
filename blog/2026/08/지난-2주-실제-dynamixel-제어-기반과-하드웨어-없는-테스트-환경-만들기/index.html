@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://ajin-robot-hand.github.io/docs/blog/2026/08/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-ppt/">
+        <link rel="canonical" href="https://ajin-robot-hand.github.io/docs/blog/2026/08/%EC%A7%80%EB%82%9C-2%EC%A3%BC-%EC%8B%A4%EC%A0%9C-dynamixel-%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B0%98%EA%B3%BC-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%97%86%EB%8A%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/">
       
       
-        <link rel="prev" href="../%ED%8C%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%A9%EB%8B%88%EB%8B%A4/">
+        <link rel="prev" href="../%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-ppt/">
       
-      
-        <link rel="next" href="../%EC%A7%80%EB%82%9C-2%EC%A3%BC-%EC%8B%A4%EC%A0%9C-dynamixel-%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B0%98%EA%B3%BC-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%97%86%EB%8A%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/">
       
       
         
@@ -27,7 +25,7 @@
     
     
       
-        <title>프로젝트 계획서 PPT - Robot Hand Team Blog</title>
+        <title>지난 2주: 실제 Dynamixel 제어 기반과 하드웨어 없는 테스트 환경 만들기 - Robot Hand Team Blog</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ppt" class="md-skip">
+        <a href="#2-dynamixel" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              프로젝트 계획서 PPT
+              지난 2주: 실제 Dynamixel 제어 기반과 하드웨어 없는 테스트 환경 만들기
             
           </span>
         </div>
@@ -661,22 +659,105 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 3지 로봇 핸드 개발 계획서
+        한눈에 보기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📊 3지 로봇 핸드 개발 계획서">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#util-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        util-scripts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="util-scripts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📌 주요 내용 요약
+        브로드캐스트 탐색과 상태 스캔
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        명령줄 인자와 WSL 환경 설정
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xl430" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XL430 제어 테이블 정의
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        하드웨어 안전 가이드 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mockporthandler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MockPortHandler
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MockPortHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocol-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocol 2.0 패킷 처리 구현
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단위 테스트 추가
       
     </span>
   </a>
@@ -717,12 +798,12 @@
                 
                   <div class="md-profile md-post__profile">
                     <span class="md-author md-author--long">
-                      <img src="https://github.com/erdoslibrary.png" alt="erdoslibrary">
+                      <img src="https://github.com/yeonjunky.png" alt="yeonjunky">
                     </span>
                     <span class="md-profile__description">
                       <strong>
                         
-                          erdoslibrary
+                          yeonjunky
                         
                       </strong>
                       <br>
@@ -744,7 +825,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2026-08-22 00:00:00+00:00" class="md-ellipsis">2026년 8월 22일</time>
+                        <time datetime="2026-08-26 00:00:00+00:00" class="md-ellipsis">2026년 8월 26일</time>
                       </div>
                     </li>
                     
@@ -755,7 +836,7 @@
                           <span class="md-ellipsis">
                             카테고리
                             
-                              <a href="../../../category/erdoslibrary/">erdoslibrary</a></span>
+                              <a href="../../../category/yeonjunky/">yeonjunky</a></span>
                         </div>
                       </li>
                     
@@ -766,7 +847,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              읽는시간 1분
+                              읽는시간 2분
                             
                           </span>
                         </div>
@@ -790,7 +871,7 @@
 
 
   
-    <a href="https://github.com/ajin-robot-hand/docs/edit/master/docs/blog/posts/2026-08-22-project-presentation.md" title="이 페이지를 편집" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ajin-robot-hand/docs/edit/master/docs/blog/posts/2026-08-26-dynamixel-development-log.md" title="이 페이지를 편집" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -798,34 +879,56 @@
   
 
 
-<h1 id="ppt">프로젝트 계획서 PPT<a class="headerlink" href="#ppt" title="Permanent link">&para;</a></h1>
-<p>8.12 첫 미팅</p>
+<h1 id="2-dynamixel">지난 2주: 실제 Dynamixel 제어 기반과 하드웨어 없는 테스트 환경 만들기<a class="headerlink" href="#2-dynamixel" title="Permanent link">&para;</a></h1>
+<p>지난 2주(8월 12일~26일)에 <a href="https://github.com/ajin-robot-hand/util-scripts">util-scripts</a>와 <a href="https://github.com/ajin-robot-hand/MockPortHandler">MockPortHandler</a>에 다음 작업을 반영했습니다.</p>
 <!-- more -->
 
-<h2 id="3">📊 3지 로봇 핸드 개발 계획서<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<div style="position: relative; width: 100%; padding-top: 56.25%; margin-bottom: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-  <iframe 
-    src="https://docs.google.com/presentation/d/1mHOTS4Yn36oswYBg8XRtNvK7ZEBAD7hh/preview" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-    allowfullscreen="true" 
-    mozallowfullscreen="true" 
-    webkitallowfullscreen="true">
-  </iframe>
-</div>
-
-<div style="text-align: right; margin-bottom: 1.5rem;">
-  <a href="https://docs.google.com/presentation/d/1mHOTS4Yn36oswYBg8XRtNvK7ZEBAD7hh/present" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 16px; background-color: #4f46e5; color: white; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.9rem;">
-    ↗️ 새 창에서 전체 화면으로 보기
-  </a>
-</div>
-
-<hr />
-<h3 id="_1">📌 주요 내용 요약<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h2 id="_1">한눈에 보기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>| 저장소 | 주요 변경 |
+| --- | --- | --- |
+| <code>util-scripts</code> | 장치 탐색·상태 조회 스크립트, XL430 제어 테이블, 하드웨어 안전 가이드 |
+| <code>MockPortHandler</code> | Protocol 2.0/XL430 mock, 포트 API, 단위 테스트, 한·영 README |</p>
+<h2 id="util-scripts"><code>util-scripts</code><a class="headerlink" href="#util-scripts" title="Permanent link">&para;</a></h2>
+<h3 id="_2">브로드캐스트 탐색과 상태 스캔<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>먼저 DynamixelSDK를 프로젝트에 연결하고, 두 가지 진단 스크립트를 추가했습니다.</p>
 <ul>
-<li><strong>1~2페이지</strong>: 7자유도 3지 로봇 핸드 개발 프로젝트 개요 및 주요 목표</li>
-<li><strong>3~4페이지</strong>: 3지 로봇 선택 이유와 파지 성공률 및 시스템 가용률 목표</li>
-<li><strong>5~6페이지</strong>: 평가 지표(KPI) 및 XL430 액추에이터 기반 세부 제품 사양</li>
-<li><strong>7~8페이지</strong>: 시스템 아키텍처 구성 및 8개월 개발 로드맵</li>
+<li><code>broadcast_ping.py</code>는 Protocol 2.0의 broadcast ping으로 연결된 Dynamixel의 ID, 모델·펌웨어 버전을 주기적으로 보여 줍니다.</li>
+<li><code>scan_servo.py</code>는 여러 baud rate와 ID 범위를 순회하며 장치를 찾고, 발견한 장치의 위치·속도·전압·온도·이동 상태·하드웨어 오류 상태를 읽습니다.</li>
+</ul>
+<h3 id="wsl">명령줄 인자와 WSL 환경 설정<a class="headerlink" href="#wsl" title="Permanent link">&para;</a></h3>
+<p>스크립트에 Windows·macOS·Linux/WSL별 기본 시리얼 포트 선택과 <code>--port</code>, <code>--baudrate</code>, <code>--max-id</code> 인자를 추가했습니다.</p>
+<p>WSL 환경을 고려해 의존성과 <code>.gitignore</code>도 정리했습니다.</p>
+<h3 id="xl430">XL430 제어 테이블 정의<a class="headerlink" href="#xl430" title="Permanent link">&para;</a></h3>
+<p>제어 테이블 주소와 데이터 길이를 <code>IntEnum</code>으로 정의했습니다. <code>PRESENT_POSITION</code>, <code>GOAL_POSITION</code>, <code>TORQUE_ENABLE</code> 등의 레지스터 이름을 포함했습니다.</p>
+<p>이번에는 기본적인 상태·목표값 레지스터 외에도 다음 튜닝·보호 항목을 주석으로 정리했습니다.</p>
+<ul>
+<li>위치 P 게인과 향후 PID/피드포워드 튜닝 항목</li>
+<li>전압·온도 제한 및 하드웨어 오류 시 종료 조건</li>
+<li>통신 단절 시 토크 차단에 활용할 수 있는 bus watchdog</li>
+</ul>
+<h3 id="_3">하드웨어 안전 가이드 작성<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><code>dynamixel_hardware_guide.md</code>에 전원 인가 상태에서 케이블을 만지지 않기, 7개 모터의 전류를 고려한 전원 라인 분산, 대기 중 전원 차단, 토크가 걸린 관절에 외력을 가하지 않기 등의 수칙을 정리했습니다.</p>
+<p><strong>전원 ON → 포트 개방·ping 검증 → 제어 → 토크 해제와 포트 종료 → 전원 OFF</strong> 순서의 제어 루틴을 문서화했습니다. 장치 탐색 스크립트에는 <code>SIGINT</code> 처리로 포트를 닫는 정리 경로도 추가했습니다.</p>
+<h2 id="mockporthandler"><code>MockPortHandler</code><a class="headerlink" href="#mockporthandler" title="Permanent link">&para;</a></h2>
+<p><code>MockPortHandler</code>에서는 DynamixelSDK의 포트 계층을 본뜬 메모리 기반 포트와 XL430 유사 장치를 구현했습니다. 포트를 열면 기본 mock 장치가 생성되고, 패킷을 쓰면 해당 장치가 처리한 Status Packet을 읽을 수 있습니다.</p>
+<h3 id="protocol-20">Protocol 2.0 패킷 처리 구현<a class="headerlink" href="#protocol-20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>통신 상수와 CRC-16 계산</li>
+<li>패킷 파싱·길이 검증·byte stuffing</li>
+<li>Status Packet 생성과 CRC 검증</li>
+<li><code>PING</code>, <code>READ</code>, <code>WRITE</code>, <code>REG_WRITE</code>, <code>ACTION</code>, <code>REBOOT</code>, <code>FACTORY_RESET</code> instruction 처리</li>
+<li>broadcast PING의 응답과 broadcast WRITE/REG_WRITE의 무응답 규칙</li>
+</ul>
+<p><code>MockXL430</code>은 모델 번호, 펌웨어 버전, 토크 활성화, 목표 위치 등의 제어 테이블 상태를 메모리에 보관합니다.</p>
+<h3 id="_4">단위 테스트 추가<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>패킷 생성과 Status Packet 검증을 위한 테스트 헬퍼를 추가하고, 다음 범위의 단위 테스트 21개를 추가했습니다.</p>
+<ul>
+<li>포트 열기·닫기, baud rate, 버퍼 비우기, 타임아웃</li>
+<li>ping과 모델/펌웨어 정보 읽기</li>
+<li>토크와 목표 위치 쓰기 및 읽기</li>
+<li>잘못된 대상 ID와 잘못된 READ 패킷 처리</li>
+<li>byte stuffing 이후의 CRC 검증</li>
+<li><code>REG_WRITE</code> 후 <code>ACTION</code>, <code>REBOOT</code>, broadcast 동작</li>
 </ul>
 
 
