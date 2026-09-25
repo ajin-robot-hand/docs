@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/2026/08/%ED%8C%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%A9%EB%8B%88%EB%8B%A4/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/2026/08/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-ppt/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/2026/08/%EC%A7%80%EB%82%9C-2%EC%A3%BC-%EC%8B%A4%EC%A0%9C-dynamixel-%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B0%98%EA%B3%BC-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%97%86%EB%8A%94-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/2026/08/dynamixel-%EC%A0%9C%EC%96%B4-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%95%88%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://ajin-robot-hand.github.io/docs/blog/2026/09/3-finger-%EB%A1%9C%EB%B4%87-%EC%86%90--%ED%8C%8C%EC%A7%80grasping-%EC%84%A4%EA%B3%84-%EC%A4%91%EA%B0%84-%EC%A0%90%EA%B2%80-%EB%B0%8F-qa-%EC%A0%95%EB%A6%AC/</loc>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/archive/2026/</loc>
-         <lastmod>2026-08-26</lastmod>
-    </url>
-    <url>
-         <loc>https://ajin-robot-hand.github.io/docs/blog/category/yeonjunky/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://ajin-robot-hand.github.io/docs/blog/category/erdoslibrary/</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://ajin-robot-hand.github.io/docs/blog/category/yeonjunky/</loc>
+         <lastmod>2026-09-25</lastmod>
     </url>
 </urlset>
