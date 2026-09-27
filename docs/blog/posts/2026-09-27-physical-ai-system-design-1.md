@@ -1,5 +1,5 @@
 ---
-title: "[book] 피지컬 AI 시스템 설계 (1)"
+title: 피지컬 AI 시스템 설계 (1)
 date: 2026-09-27
 categories:
   - erdoslibrary
@@ -7,6 +7,7 @@ authors:
   - erdoslibrary
 ---
 
+<img width="4608" height="2304" alt="책 배너2 (1)" src="https://github.com/user-attachments/assets/e44c0209-3015-4d60-b145-5424b7584078" />
 
 
 # about
