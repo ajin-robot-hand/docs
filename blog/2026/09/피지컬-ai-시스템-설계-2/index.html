@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://ajin-robot-hand.github.io/docs/blog/2026/09/%ED%94%BC%EC%A7%80%EC%BB%AC-ai-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84-1/">
+        <link rel="canonical" href="https://ajin-robot-hand.github.io/docs/blog/2026/09/%ED%94%BC%EC%A7%80%EC%BB%AC-ai-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84-2/">
       
       
-        <link rel="prev" href="../3-finger-%EB%A1%9C%EB%B4%87-%EC%86%90--%ED%8C%8C%EC%A7%80grasping-%EC%84%A4%EA%B3%84-%EC%A4%91%EA%B0%84-%EC%A0%90%EA%B2%80-%EB%B0%8F-qa-%EC%A0%95%EB%A6%AC/">
+        <link rel="prev" href="../%ED%94%BC%EC%A7%80%EC%BB%AC-ai-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84-1/">
       
-      
-        <link rel="next" href="../%ED%94%BC%EC%A7%80%EC%BB%AC-ai-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84-2/">
       
       
         
@@ -27,7 +25,7 @@
     
     
       
-        <title>피지컬 AI 시스템 설계 (1) - Robot Hand Team Blog</title>
+        <title>피지컬 AI 시스템 설계 (2) - Robot Hand Team Blog</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about" class="md-skip">
+        <a href="#ai" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              피지컬 AI 시스템 설계 (1)
+              피지컬 AI 시스템 설계 (2)
             
           </span>
         </div>
@@ -654,6 +652,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#93-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 좋은 행동 데이터가 좋은 피지컬 AI를 만든다.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 가상 세계에서 물리 법칙과 센서를 재현하는 방법
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        시뮬레이터별 한눈 비교
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -708,7 +747,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2026-09-27 00:00:00+00:00" class="md-ellipsis">2026년 9월 27일</time>
+                        <time datetime="2026-09-28 00:00:00+00:00" class="md-ellipsis">2026년 9월 28일</time>
                       </div>
                     </li>
                     
@@ -730,7 +769,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              읽는시간 7분
+                              읽는시간 3분
                             
                           </span>
                         </div>
@@ -754,7 +793,7 @@
 
 
   
-    <a href="https://github.com/ajin-robot-hand/docs/edit/master/docs/blog/posts/2026-09-27-physical-ai-system-design-1.md" title="이 페이지를 편집" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ajin-robot-hand/docs/edit/master/docs/blog/posts/2026-09-28-physical-ai-system-design-2.md" title="이 페이지를 편집" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -763,219 +802,135 @@
 
 
 <p><img width="4608" height="2304" alt="책 배너2 (1)" src="https://github.com/user-attachments/assets/e44c0209-3015-4d60-b145-5424b7584078" /></p>
-<h1 id="about">about<a class="headerlink" href="#about" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>학술적으로 완전히 수렴되거나 고정된 정답이라기보다는, 현재 학계와 산업계의 연구자들이 마주한 다양한 문제들을 어떻게 정의하고 해결해 나가고 있는지를 보여주는 최신 기술 동향에 가깝습니다. 독자 여러분이 이러한 실제 연구 사례와 접근법을 접함으로써 피지컬 AI의 핵심 개념을 빠르게 이해하고, 이를 각자의 실무나 프로젝트에 직접 응용해 볼 수 있도록 내용을 구성했습니다. - p29</p>
-</blockquote>
 <!-- more -->
 
-<h1 id="ai">웹과 앱을 넘어 현실로: 피지컬 AI 시대가 온다<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
-<h3 id="ai_1">왜 지금 빅테크는 피지컬 AI에 주목하는가?<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
-<p>생성형 AI의 언어 이해와 추론 능력을 카메라, 센서, 로봇의 움직임, 물리적 환경과 연결하려는 시도</p>
-<p>현실 세계에서 무엇을 할 수 있는지를 탐구하는 분야</p>
-<p>스스로 물리적 환경을 인지(perception) → 상황을 이해(understanding) → 그에 맞는 행동(action)을 물리적으로 수행할 수 있는 지능령 시스템</p>
-<h4 id="12-ai">1.2 지금 피지컬 AI가 현실적인 기술 흐름이 된 이유<a class="headerlink" href="#12-ai" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>그럼에도 불구하고, 이 프로젝트를 끝내야 하는 이유를 좀 더 고민하고 생각해보죠.</p>
+</blockquote>
+<h1 id="ai">로봇 없이 시작하는 피지컬 AI 실전 개발<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
+<h4 id="93-ai">9.3 좋은 행동 데이터가 좋은 피지컬 AI를 만든다.<a class="headerlink" href="#93-ai" title="Permanent link">&para;</a></h4>
 <ul>
-<li>개발보다도 더 어려운 건 현장 안정화</li>
-<li>우리 일상생활은 예측 불가능성</li>
-<li>거대언어모델(LLM)과 멀티모달(multimodal)기술의 발전 → 스스로 맥락을 유추하여 유연하게 대처할 수 있는 능력</li>
-<li>최근 주목 받는 시간-언어-행동 모델(Vison-Language-Action Model(VLA))</li>
+<li>로봇이 실제 세계에서 움직이려면 단순한 이미지나 텍스트만으로는 부족. 카메라 관측, 깊이 정보, 3D공간 구조, 관절 상태, 그리퍼 상태, 사람의 시연, 물체와의 상호작용이 함께 기록된 행동데이터가 필요하다.</li>
+<li>좋은 데이터: 로봇이 실제 행동으로 옮길 수 있도록 잘 정렬되고 변환된 데이터</li>
 </ul>
-<h4 id="13">1.3 로봇 없이는 못하나요? 진입 장벽을 깨는 흔한 오해들<a class="headerlink" href="#13" title="Permanent link">&para;</a></h4>
+<h4 id="102">10.2 가상 세계에서 물리 법칙과 센서를 재현하는 방법<a class="headerlink" href="#102" title="Permanent link">&para;</a></h4>
 <ol>
-<li>기계 공학, 제어 공학, AI 모델링의 전문가가 되어야만 시작할 수 있다. No.<ul>
-<li>오픈소스 프레임워크(https://huggingface.co/lerobot)</li>
-<li>로봇 전용 미들웨어(ROS2)</li>
-</ul>
-</li>
-<li>값비싼 로봇 하드웨어와 거대한 테스트 인프라가 없으면 불가능하다. No.<ul>
-<li>MuJoCo, Gazebo, Isaac Sim</li>
-</ul>
-</li>
-<li>데이터 확보와 거대 모델 훈련은 빅테크 기업들만의 전유물이다. No.<ul>
-<li>https://robotics-transformer-x.github.io/</li>
-</ul>
-</li>
+<li>접촉과 마찰을 계산하는 물리 모델링</li>
+<li>모터 지연과 힘을 반영하는 액추에이터 모델링</li>
+<li>카메라와 LiDAR를 재현하는 센서 렌더링</li>
 </ol>
-<h4 id="21-llm-ai">2.1 텍스트를 생성하는 LLM과 행동을 만드는 피지컬 AI의 차이<a class="headerlink" href="#21-llm-ai" title="Permanent link">&para;</a></h4>
+<p>-&gt; 실제 로봇이 겪을 조건을 얼마나 잘 모사하는가. 품질이 좋아질수록 가상환경에서 얻은 데이터와 정책이 실제 세계로 옮겨갈 수 있다.</p>
+<iframe 
+  width="100%" 
+  style="aspect-ratio: 16/9; border-radius: 8px; border: none; margin: 1rem 0;" 
+  src="https://www.youtube.com/embed/ZN6MT4YcD0E?si=4DrKSpoRDti5GlHM" 
+  title="YouTube video player" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+</iframe>
+
+<h2 id="_1">시뮬레이터별 한눈 비교<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>시뮬레이터</th>
+<th>주 목적</th>
+<th>선택 기준</th>
+<th>개요 (한 문장)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gazebo</strong></td>
+<td>시스템 통합 검증</td>
+<td>하드웨어가 제대로 동작할지 확인</td>
+<td>실물 로봇을 만들기 전에 ROS2 코드와 센서 배선을 그대로 돌려보는 "가상 실험실"</td>
+</tr>
+<tr>
+<td><strong>MuJoCo</strong></td>
+<td>접촉 동역학 검증</td>
+<td>손가락이 물체를 제대로 잡는지 확인</td>
+<td>물체를 잡을 때 손가락에 걸리는 힘을 가장 정확하게 계산해주는 "접촉 전문 엔진"</td>
+</tr>
+<tr>
+<td><strong>SAPIEN / ManiSkill</strong></td>
+<td>조작 정책 학습·벤치마킹</td>
+<td>파지 정책을 학습시켜 남과 비교</td>
+<td>잡기 과제와 정답 시연 데이터가 이미 들어있는 "파지 AI 문제집"</td>
+</tr>
+<tr>
+<td><strong>Isaac Sim / Lab</strong></td>
+<td>대규모 병렬 학습 + sim-to-real</td>
+<td>실물 이전까지 산업 수준으로</td>
+<td>실사에 가까운 화면으로 수천 대 로봇을 동시에 훈련시키는 "NVIDIA 공장"</td>
+</tr>
+<tr>
+<td><strong>Habitat</strong></td>
+<td>실내 내비게이션</td>
+<td>로봇이 공간을 돌아다니는 문제</td>
+<td>실제 집을 스캔한 공간에서 로봇이 길을 찾게 하는 "가상 아파트"</td>
+</tr>
+<tr>
+<td><strong>Brax</strong></td>
+<td>RL 알고리즘 실험</td>
+<td>RL 알고리즘 자체 연구</td>
+<td>물리 정확도를 조금 포기하고 학습 속도를 극한으로 끌어올린 "RL 연습장"</td>
+</tr>
+<tr>
+<td><strong>Genesis</strong></td>
+<td>통합 물리 + 초고속 시뮬</td>
+<td>최신 통합 스택 탐색</td>
+<td>강체·유체·연성체를 한 엔진에 다 담으려는 "차세대 실험작"</td>
+</tr>
+</tbody>
+</table>
+<p>이렇게 하면 "선택 기준" 열만 세로로 읽어도 어떤 시뮬레이터를 골라야 할지 바로 판단할 수 있습니다. 기술 스펙 표는 앞서 드린 내용 그대로 붙이시면 됩니다.</p>
+<h1 id="ai_1">피지컬 AI 시대, 넥스트 커리어 준비하기<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h1>
+<h4 id="181-ai">18.1 엔비디아와 구글의 행보로 보는 피지컬 AI의 거대한 미래 시장<a class="headerlink" href="#181-ai" title="Permanent link">&para;</a></h4>
 <ul>
-<li>생각을 잘하는 만큼이나, 안전하게/정확하게/반복 가능하게 행동하는 것</li>
-<li>입력과 출력의 형태<ul>
-<li>입력: 카메라 영상, 깊이 센서, 관절 각도, 속도, 힘/토크, GPS, IMU, 배터리 상태, 주변 객체의 위치 정보</li>
-<li>출력: 복합적</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h1 id="ai_2">생각에서 행동으로: 피지컬 AI 핵심 아키텍처 이해하기<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h1>
-<h3 id="llm">LLM플래닝: 사람의 말을 실제 행동으로 바꾸는 첫 번째 방법<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h3>
-<h4 id="31-llm">3.1 LLM을 이용한 로봇의 행동 계획 세우기<a class="headerlink" href="#31-llm" title="Permanent link">&para;</a></h4>
-<ul>
+<li>현실과 가상환경을 오가며 데이터를 만들고, 모델을 검증하고, 배포 이후 다시 학습으로 연결되는 루프를 설계하는 사람</li>
+<li>피지컬 AI 미래의 몇 가지 수렴 방향</li>
+<li>로봇 지능은 상위 추론과 하위 행동이 긴밀히 결합된 구조로 발전하고 있다.</li>
+<li>좋은 모델 하나만으로는 부족하며, 시뮬레이션, 합성 데이터, 월드 모델, 사후 학습, 온디바이스 실행까지 포함한 전체 개발 체계가 핵심 경쟁력이 되고 있다.</li>
 <li>
-<p><a href="https://say-can.github.io/">SayCan(2022)</a>
-<img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/22829080-8c68-4374-946a-a8658e1391e3/image.gif" /></p>
-</li>
-<li>
-<p>LLM: 무엇을 해야 할 것 같은가 제안</p>
-</li>
-<li>로봇의 가치함수: 그 행동이 지금 실제로 가능한가 평가</li>
-<li>두 정보를 결합해 다음 행동 선택</li>
-<li>의의: 이 역할을 나눔으로써, 로봇이 복잡한 언어 명령어를 더 유연하게 이해할 수 있고, 동시에 실제 환경에서 불가능한 행동을 어느 정도 걸러낼 수 있었다. 미리 준비된 스킬만 있다면, 이 스킬들의 조합으로 더 긴 작업을 수행할 수도 있었다.</li>
-<li>한계: 로봇이 사용할 수 있는 행동 단위가 미리 준비되어 있어야 한다. LLM이 아무리 좋은 계획을 세워도 그 계획을 실행할 원시 행동이나 스킬이 없다면 실제 행동으로 이어질 수 없음. 또한, 가치 함수가 정확하지 않으면 실행 가능성 평가도 흔들릴 수 있다.</li>
-</ul>
-<h4 id="32-palm-e2023">3.2 계획하는 모델에서 보는 모델로:PaLM-E(2023)<a class="headerlink" href="#32-palm-e2023" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://palm-e.github.io/">PaLM-E(2023): An Embodied Multimodal Language Model</a></li>
-</ul>
-<p><img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/602c53ce-fbb6-4084-8e97-a548b9bdbed9/image.gif" /></p>
-<ul>
-<li>핵심: 로봇이 "보는 것"과 "말하는 것"을 하나의 문장 구조 안으로 연결</li>
-<li>의의: 웹과 비전 도메인에서 학습된 표현 자체를 체화 모델 안으로 주입하고 그 전이 효과를 실험적으로 보여준 모델 -&gt; VLA 흐름으로 이어지는 다리 역할</li>
-</ul>
-<h4 id="33-chatgpt-for-robotics2023">3.3 함수 호출과 코드 생성으로 로봇을 움직이는 역할: ChatGPT for Robotics(2023)<a class="headerlink" href="#33-chatgpt-for-robotics2023" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://www.microsoft.com/en-us/research/articles/chatgpt-for-robotics/">ChatGPT for Robotics(2023)</a></li>
-</ul>
-<p><img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/88b7e61c-dc37-41f3-8025-cadeae2aa4a0/image.png" /></p>
-<ul>
-<li>핵심 아이디어: 로봇이 사용할 수 있는 고수준 라이브러리 설계</li>
-<li>
-<p>이 함수들을 언어 모델이 잘 사용할 수 있도록 프롬프트를 구성하는 프롬프트 엔지니어링</p>
-</li>
-<li>
-<p>사용자가 자연어로 목표를 말하면, 언어 모델이 이를 상위 함수 체인으로 바꾸는 user on the loop 구조 지향. 여기서 ChatGPT는 사람과 로봇 시스템 사이에서 계획과 코드를 다듬는 협업형 상위 계층에 가깝다.</p>
-</li>
-</ul>
-<p><img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/80e3cafd-b972-4fea-8e76-f5f32e0f100d/image.jpg" /></p>
-<hr />
-<h3 id="vla-ai">VLA 모델의 탄생: 판단을 넘어 직접 행동하는 AI로<a class="headerlink" href="#vla-ai" title="Permanent link">&para;</a></h3>
-<p>VLA: Vision-Language-Action</p>
-<p>계획만 언어 모델에 맡길 것이 아니라, 로봇의 행동 정책 자체도 대규모 모델로 일반화할 수는 없을까?</p>
-<h4 id="rt-1-transformer-2022">RT-1: 실제 로봇 제어도 Transformer로 스케일링할 수도 있다(2022)<a class="headerlink" href="#rt-1-transformer-2022" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://robotics-transformer1.github.io/">Robotics Transformer for Real World Control at Scale</a></li>
-</ul>
-<p><img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/6047d02f-c78f-4e4b-9ca1-ff98dfef06d5/image.gif" /></p>
-<ul>
-<li>
-<p>목적: 많은 로봇 데이터를 모아 하나의 모델을 학습시키면, 로봇 정책(policy)도 새로운 지시문 조합, 새로운 배경, 방해 물체가 많은 장면에서 더 잘 일반화할 수 있는지를 확인</p>
-</li>
-<li>
-<p>의의: (스케일링에 대한 논의 제시). 단순히 데이터 개수만 많은 것보다,  작업 다양성이 일반화에 더 중요하다. 같은 작업을 수천 번 반복해서 찍는 것만으로는 한계가 있고, 서로 다른 물체와 서로 다른 상황, 서로 다른 지시문을 폭넓게 포함하는 데이터셋을 만드는 것이 일반화에 훨씬 도움이 된다. 로봇 정책을 키우려면 단순히 모델만 키워서는 안 된다. 다양한 작업, 다양한 물체, 다양한 환경, 다양한 실패 상황이 포함된 데이터가 필요하다. RT-1은 로봇 제어를 스케일링 가능한 학습 문제로 바라보게 만든 중요한 전환점이었다.</p>
-</li>
-</ul>
-<h4 id="43-robocat-2023">4.3 RoboCat: 여러 로봇 몸체와 작업으로 확장되는 범용 정책(2023)<a class="headerlink" href="#43-robocat-2023" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://deepmind.google/blog/robocat-a-self-improving-robotic-agent/">RobotCat</a></li>
-<li>기존 범용 모델이 새 작업을 조금 배우고, 그걸 바탕으로 더 많은 데이터를 스스로 만든 뒤, 다시 범용성을 넓힌다는 구조를 제시.</li>
-<li>더 다양한 몸체(embodiment)와 자기 개선(self-improvement) 방향으로 확장한 연구</li>
-</ul>
-<h4 id="44-rt-2-2023">4.4 RT-2:웹 지식이 로봇 행동으로 전이되다(2023)<a class="headerlink" href="#44-rt-2-2023" title="Permanent link">&para;</a></h4>
-<ul>
-<li>
-<p><a href="https://robotics-transformer2.github.io/">Vision-Language-Action Models Transfer Web Knowledge to Robotic Control</a>
-<img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/87ad3d43-9569-4238-aadb-c2c9c42c597f/image.png" />
-<img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/a39090f2-2002-4ca0-93e4-92a2ba6e81ec/image.png" /></p>
+<p>특정 로봇 한 종에 기술이 머물지 않고, 다양한 몸체로 이식 가능한 공통 지능 계층을 향해 확장하고 있다.</p>
 </li>
 <li>
-<p>시각, 언어, 행동 모델이 웹에서 배운 지식을 로봇 제어로 옮길 수 있는가</p>
+<p>데이터와 시뮬레이션, 배포와 검증, 몸체 간 일반화까지 함께 보는 시야를 가져야 한다.</p>
 </li>
-<li>의의: 시각, 언어, 행동을 하나의 모델 안에서 연결하고, 웹에서 학습한 일반 지식을 실제 제어로 전이하는 문제로 다시 정의. VLA 흐름을 대표하는 중요한 전환점</li>
 </ul>
-<p><img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/bc332ab6-8246-4938-afff-da058011658c/image.jpg" /></p>
-<blockquote>
-<p>VLA를 키우려면 어떤 데이터 생태계가 필요할까?</p>
-</blockquote>
-<hr />
-<h3 id="_1">오픈 로봇 데이터와 범용 모델 생태계<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<h4 id="52-open-x-embodiment-octo">5.2 Open X-Embodiment와 Octo<a class="headerlink" href="#52-open-x-embodiment-octo" title="Permanent link">&para;</a></h4>
+<h4 id="182">18.2 개발자 직무의 대전화: 단순 코더에서 데이터 큐레이터로<a class="headerlink" href="#182" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://robotics-transformer-x.github.io/">Open X-Embodiment</a></li>
-<li><a href="https://octo-models.github.io/">Octo</a></li>
-</ul>
-<p><img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/3fbc6ea0-dbe0-4452-b75c-4ff7d5915025/image.png" /></p>
-<ul>
-<li>의의: 강력한 사전 학습 기반 위에서 각 현장에 맞는 빠른 적응을 가능하게 하는 기반 정책(foundation policy)</li>
-<li>한계: 단일 로봇팔(single-arm)과 양팔 조작(dual-arm manipulation) 중심으로 학습, 평가되었고 네비게이션이나 사족 보행(quadruped locomotion) 같은 영역까지 직접 다루지는 않음. 또 손목 카메라(wrist camera) 정보 활용이 충분히 강하지 않다는 점, 언어 조건과 목표 이미지 조건 사이에 성능차이가 있다는 점.</li>
-</ul>
-<h4 id="53-openvla-ai">5.3 OpenVLA: 오픈소스 생태계가 제어 명령에서 범용 AI로 진화<a class="headerlink" href="#53-openvla-ai" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://openvla.github.io/">OpenVLA</a>
-<img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/aa442d5c-ddfd-444f-9524-b147f6481477/image.png" /></li>
-</ul>
-<hr />
-<h3 id="vla">VLA에는 왜 중간 표현과 연속 액션이 필요했을까?<a class="headerlink" href="#vla" title="Permanent link">&para;</a></h3>
-<p>'보고 말귀를 알아듣고 바로 움직이는 모델' -&gt; '행동하기 전에 장면을 해석하고, 목표를 만들고, 그 목표를 실제 움직임으로 바꾸는 모델'</p>
-<h4 id="62-rt-h">6.2 RT-H: 행동 사이에 언어적 중간 표현을 두는 방법<a class="headerlink" href="#62-rt-h" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://rt-hierarchy.github.io/">Action Hierarchies Using Language</a></li>
-<li>고수준 명령과 저수준 제어 사이에 해석 가능하고 수정 가능한 중간층을 둔 연구</li>
-<li>의의: 이후 명시적 추론, 중간 목표 생성, 듀얼 시스템 로봇 구조로 이어지는 중요한 선행 사례</li>
-</ul>
-<h4 id="63-0-rdt-1b">6.3 π₀와 RDT-1B: 연속 액션을 부드럽게 생성하는 방법<a class="headerlink" href="#63-0-rdt-1b" title="Permanent link">&para;</a></h4>
-<ul>
-<li>로봇의 실제 액션을 어떤 방식으로 생성해야 하는가?</li>
-<li>π₀: flow matching을 이용해 연속 액션 분포를 직접 생성</li>
-<li>flow matching: 무작위 노이즈에서 시작해 점점 그럴듯한 연속 액션으로 바꿔가는 생성 방식</li>
-<li>두뇌는 시각/언어 모델의 힘을 빌리고, 손발은 로봇 물리에 맞게 다시 설계한 구조</li>
-<li><a href="https://rdt-robotics.github.io/rdt-robotics/">RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation</a>
-<img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/1b515f86-f419-45b4-9317-1e5688dce519/image.png" /></li>
-<li>의의: 행동도 토큰처럼 생성될 수 있지 않을까의 한계 -&gt; 정밀한 물리 제어에는 한계가 있다. 의미 이해와 계획은 언어 모델의 강점을 빌릴 수 있지만, 실제 손발의 궤적은 텍스트 문법만으로 다루기 어렵다. 그러니 로봇 행동을 언어처럼 다룬다는 발상을 시맨틱 계층에는 남겨두되, 실제 출력 계층은 연속 생성 모델로 분화시키기 시작. 이러한 흐름이 후에 VLA 내부에서 추론 계층(reasoning layer), 액션 전문가(action expert), 하위 제어기가 점점 분리되는 기술적 토대가 됨.</li>
-</ul>
-<h4 id="64-navila">6.4 NaVILA: 이동 로봇에 계층형 구조가 필요한 이유<a class="headerlink" href="#64-navila" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://navila-bot.github.io/">Navila: vision-and-language navigation</a></li>
-<li>카메라로 본 장면과 자연어 지시를 함께 이해해 이동하는 문제</li>
-<li>어디로 가야하는지를 해석하는 층 + 그것을 실제로 넘어지지 않고 걷는 동작으로 바꾸는 층을 분리한 모델</li>
-</ul>
-<hr />
-<h3 id="_2">명시적 추론과 듀얼 시스템 설계<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<h4 id="72-cot-vla">7.2 CoT-VLA: 행동 전에 목표 장면을 먼저 추론하는 방법<a class="headerlink" href="#72-cot-vla" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://cot-vla.github.io/">CoT-VLA</a></li>
-<li>의의: '길게 설명하는 텍스트'에서 '행동에 직접 쓰이는 미래 시각 상태'로 옮겨 놓았다. </li>
-</ul>
-<h4 id="74-groot-n1-05">7.4 GROOT N1, π₀.₅: 계층형 시스템 설계가 주목받는 이유<a class="headerlink" href="#74-groot-n1-05" title="Permanent link">&para;</a></h4>
-<ul>
-<li><a href="https://wikidocs.net/366379">GROOT N1</a></li>
-<li>dual-system architecture를 가진 VLA</li>
 <li>
-<p>느리지만 신중하게 장면과 지시를 해석하는 계층과, 빠르게 실제 행동을 만들어내는 계층을 나누는 구조</p>
+<p><strong>유능한 개발자라는 정의</strong>: 코드를 정교하게 짜는 사람? NO. 실제 현장에서 어떤 장면이 반복적으로 실패를 만드는지 실패 분포를 읽을 수 있어야 한다. 그 실패를 보완할 수 있도록 데이터 수집 시나리오를 설계하거나, 디지털 트윈에서 합성 변형을 만들거나, 어려운 부정 사례를 모으거나, 작업 분해 기준으로 샘플을 다시 묶을 수 있어야 한다.</p>
 </li>
 <li>
-<p><a href="https://wikidocs.net/328763">π₀.₅: a VLA Model with Open-World</a> 
-<img alt="" src="https://velog.velcdn.com/images/erdosnumber0/post/133fd006-4a04-4f37-aec0-3d43e35a91be/image.png" /></p>
+<p>중요해질 역량</p>
 </li>
-<li>
-<p>오픈 월드 일반화, 즉 훈련 때 보지 못한 새로운 실제 환경에서도 일반화되는 능력을 목표로 잡고 있다.</p>
-</li>
-<li>일반화: 학습한 데이터만 잘 외우는 것이 아니라, 처음 보는 집, 물체, 배치에서도 적절히 행동할 수 있는 성질</li>
-<li>웹 데이터, 객체 검출 데이터, 하위 과업 라벨, 서로 다른 로봇 플랫폼에서 수집한 행동 데이터까지 함께 섞어 학습</li>
+<li>로봇 시스템에 대한 이해</li>
+<li>ML 파이프라인에 대한 이해</li>
+<li>도메인 문맥 이해</li>
 </ul>
 <blockquote>
-<p>상위 추론 계층이 장면을 이해한다고 할 때, 그 장면과 지식은 어떤 형태로 표현되어야 할까?
-(이미지 픽셀만 보는 것이 아니라, 물체, 공간, 관계, 규칙, 가능 행동을 함께 다뤄야 한다. 온톨로지, 객체 중심 표현, 3D 장면 그래프 같은 구조화된 지식 표현이 다시 중요해지는 이유는?)</p>
+<p>현실 세계의 경험을 학습 가능한 자산으로 바꾸는 사람.</p>
 </blockquote>
-<hr />
-<h3 id="_3">온톨로지와 장면 그래프로 현실 세계 구조화하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="ai_2">피지컬 AI 개발자로 거듭나기 위한 로드맵<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>무엇부터 깊게 팔 것인가? NO
+이 복잡한 분야를 어떤 관점으로 바라봐야 하는가? -&gt; 전체를 보는 눈 기르기</p>
+</blockquote>
 <ul>
-<li>ontology</li>
-<li>scene graph</li>
-<li>OG-RAG를 통해 온톨로지가 LLM과 RAG에서 어떤 역할을 하는지 </li>
-<li>3D장면 그래프와 로봇 온톨로지를 결합해 행동 가능한 지식 기반을 만드는 흐름</li>
-<li>피지컬 AI의 주류 모델을 대체하는 기술이라기보다, 상위 추론 계층을 보강하는 기술.</li>
+<li>가장 중요한 경험: 작게라도 아이디어를 실제 프로젝트로 <strong>실체화</strong></li>
+<li>포트폴리오에 3가지 요소가 있어야 한다.</li>
+<li>전체 시스템 흐름이 보여야 한다.</li>
+<li>실패 분석이 포함되어야 한다. 잘된 결과만 보여주는 것이 아니라, 어떤 상황에서 실패했고, 그 원인이 무엇인지 분석하는 내용이 있어야 한다.</li>
+<li>개선 루프가 있어야 한다. 실패를 보고 데이터나 구조를 어떻게 바꾸었는지, 그 겨로가가 어떻게 달라졌는지 보여주어야 한다.</li>
 </ul>
-<h4 id="81-og-rag">8.1 온톨로지와 OG-RAG:단순 검색을 넘어 구조화된 지식으로<a class="headerlink" href="#81-og-rag" title="Permanent link">&para;</a></h4>
+<h4 id="193-ai">19.3 정리: 피지컬 AI 커리어는 작은 시스템을 끝까지 만들어보는 데서 시작된다.<a class="headerlink" href="#193-ai" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://arxiv.org/abs/2412.15235">OR-RAG(Ontology-Grounded Retrieval-Augmented Generation For Large Language Models)</a></li>
-<li>ontology: 어떤 분야에서 중요한 대상이 무엇이고, 그것들이 서로 어떤 관계를 맺는지를 명확한 형태로 정리해 둔 지식 구조</li>
-<li>중요한 이유: 정보가 단순한 문장 조각의 집합으로만 존재하지 않기 때문에. 실제 도메인 지식은 여러 개념과 사실이 함께 묶여야 의미가 분명해진다.</li>
-<li>기존 RAG처럼 문서를 기계적으로 나누어 검색하는 데서 그치지 않고, 도메인 온톨로지를 활용해 문서 속 정보를 구조화한 뒤 검색에 활용</li>
-<li>문서를 자르기 전에 해당 도메인의 전문가가 미리 정의해 둔 온톨로지 체계를 기준으로 문서 내의 다양한 사실들을 선별하고 구조화 -&gt; 정리된 지식을 하이퍼그래프(hypergraph)라는 구조로 변환</li>
-</ul>
-<h4 id="82-ai-3d">8.2 공간을 이해하는 AI: 3D 장면 그래프를 활용한 상위 추론 레이어 설계<a class="headerlink" href="#82-ai-3d" title="Permanent link">&para;</a></h4>
-<ul>
-<li>장면 그래프 + 온톨로지 결합으로 단순환 환경 데이터는 로봇이 작업 계획에 활용할 수 있는 행동 가능한 지식(actionable knowledge)으로 바뀐다.</li>
+<li>기존 역량을 버리는 것이 아니라 확장하는 것</li>
+<li>단순히 모델을 실행하는 데서 멈추지 말고, 입력과 출력, 실패와 개선, 데이터와 평가를 모두 포함한 작은 루프를 완성해 볼 것.</li>
 </ul>
 
 
