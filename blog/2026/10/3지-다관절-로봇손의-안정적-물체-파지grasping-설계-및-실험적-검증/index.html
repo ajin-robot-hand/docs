@@ -856,7 +856,7 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
       Experiments
     </a>
-    <a href="2026-10-14-tri-hand-extension.md" class="nerfies-btn secondary" style="background: rgba(37, 99, 235, 0.1); color: #2563eb !important; border-color: rgba(37, 99, 235, 0.3);">
+    <a href="2026-10-14-tri-hand-extension.md" class="nerfies-btn secondary">
       Extension Project ➡️
     </a>
   </div>
@@ -872,7 +872,7 @@
   <div class="nerfies-media-box" style="min-height: 280px;">
     <span class="nerfies-media-badge">Robotic Grasping Benchmark</span>
     <div style="padding: 2.5rem 1.5rem; text-align: center;">
-      <svg width="56" height="56" viewBox="0 0 24 24" fill="#38bdf8" style="opacity: 0.9; margin-bottom: 0.8rem;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm-2-8c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="#94a3b8" style="opacity: 0.9; margin-bottom: 0.8rem;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm-2-8c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
       <p style="margin:0; font-size: 1.05rem; font-weight: 700; color: #f1f5f9;">tri_hand Multi-Shape Grasping Demonstration</p>
       <p style="margin:0.35rem 0 0 0; font-size: 0.85rem; color: #94a3b8;">구(공) · 물병(원통) · 수첩(평면) 200g 물체 안정 파지 시연 영상 (준비 중)</p>
     </div>
@@ -894,7 +894,7 @@
       본 프로젝트 <code>tri_hand-basic</code>은 3지 다관절(Finger A 3-DoF, Finger B·C 각 2-DoF) 구조를 바탕으로,
       <strong>200g 미만 대표 형상 3종(구, 원통, 평면) 물체의 파지 안정성을 분석하고 실물 하드웨어에서 성공적인 그립을 구현</strong>했습니다.
     </p>
-    <hr style="border: 0; border-top: 1px solid rgba(37, 99, 235, 0.2); margin: 1.2rem 0;">
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 1.2rem 0;">
     <h4 style="margin: 0 0 0.8rem 0; font-size: 1.05rem; color: var(--md-typeset-color, #1e293b);">🌟 핵심 설계 및 검증 성과</h4>
     <ul style="margin-bottom: 0; padding-left: 1.2rem;">
       <li><strong>실리콘 마찰 패드 기반 면 접촉 채택</strong>: 미끄러지기 쉬운 3D 프린팅 손가락 끝 대신 액추에이터 평면에 실리콘 테이프를 부착하여 접촉 마찰 계수를 극대화.</li>
@@ -977,32 +977,32 @@
 <div class="nerfies-section" id="experiments">
   <h2 class="nerfies-sec-title">3대 대상 물체별 파지 특성 및 실험</h2>
   <div class="nerfies-pipeline-card">
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+    <div class="nerfies-subcard-grid">
       <!-- Object 1 -->
-      <div style="background: rgba(37, 99, 235, 0.04); border: 1px solid rgba(37, 99, 235, 0.15); border-radius: 12px; padding: 1.2rem;">
-        <h4 style="margin: 0 0 0.5rem 0; color: #2563eb;">1. 구(공) — 마찰 한계 테스트</h4>
-        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5;">
-          • <strong>접촉 특성</strong>: 점 접촉 위주로 접촉 면적이 가장 작음.<br>
-          • <strong>실패 위험</strong>: 무게중심 오차 시 굴러서 이탈 가능성 큼.<br>
-          • <strong>해결책</strong>: 그립 중심을 손 중심에 정확히 맞추고 넉넉한 토크 마진 확보.
+      <div class="nerfies-subcard">
+        <div class="nerfies-subcard-title">1. 구(공) — 마찰 한계 테스트</div>
+        <p class="nerfies-subcard-desc">
+          • <strong>접촉 특성</strong>: 점 접촉 위주로 접촉 면적이 작음.<br>
+          • <strong>실패 위험</strong>: 무게중심 오차 시 굴러서 이탈 가능성 존재.<br>
+          • <strong>해결책</strong>: 그립 중심을 손 중심에 정확히 맞추고 토크 마진 확보.
         </p>
       </div>
       <!-- Object 2 -->
-      <div style="background: rgba(37, 99, 235, 0.04); border: 1px solid rgba(37, 99, 235, 0.15); border-radius: 12px; padding: 1.2rem;">
-        <h4 style="margin: 0 0 0.5rem 0; color: #2563eb;">2. 물병(원통) — 안정성 테스트</h4>
-        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5;">
-          • <strong>접촉 특성</strong>: 손가락과 축 방향이 평행할 때 선 접촉 형성.<br>
-          • <strong>실패 위험</strong>: 정렬이 틀어지면 점 접촉으로 축소, 액체 쏠림 변수.<br>
-          • <strong>해결책</strong>: 표면 재질(플라스틱, 라벨) 마찰력 실측 후 파지 폭 제어.
+      <div class="nerfies-subcard">
+        <div class="nerfies-subcard-title">2. 물병(원통) — 안정성 테스트</div>
+        <p class="nerfies-subcard-desc">
+          • <strong>접촉 특성</strong>: 손가락과 축 방향 평행 시 선 접촉 형성.<br>
+          • <strong>실패 위험</strong>: 정렬 오차 시 점 접촉 축소, 액체 쏠림 변수.<br>
+          • <strong>해결책</strong>: 표면 재질 마찰력 실측 후 최적 파지 폭 제어.
         </p>
       </div>
       <!-- Object 3 -->
-      <div style="background: rgba(37, 99, 235, 0.04); border: 1px solid rgba(37, 99, 235, 0.15); border-radius: 12px; padding: 1.2rem;">
-        <h4 style="margin: 0 0 0.5rem 0; color: #2563eb;">3. 수첩(평면) — 정렬 정밀도 테스트</h4>
-        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5;">
+      <div class="nerfies-subcard">
+        <div class="nerfies-subcard-title">3. 수첩(평면) — 정렬 정밀도 테스트</div>
+        <p class="nerfies-subcard-desc">
           • <strong>접촉 특성</strong>: 완벽 정렬 시 면 접촉으로 가장 넓은 면적 확보.<br>
-          • <strong>실패 위험</strong>: 미세한 기울어짐에도 모서리만 닿아 파지 실패.<br>
-          • <strong>해결책</strong>: 손가락 열림 폭의 정밀 위치 제어로 정확한 수평 진입.
+          • <strong>실패 위험</strong>: 미세한 기울어짐에도 모서리만 닿아 이탈.<br>
+          • <strong>해결책</strong>: 손가락 열림 폭 정밀 위치 제어로 정확한 수평 진입.
         </p>
       </div>
     </div>
@@ -1048,14 +1048,14 @@
 <!-- SECTION 5: LINK TO EXTENSION PROJECT       -->
 <!-- ========================================== -->
 <div class="nerfies-section">
-  <div class="nerfies-abstract-card" style="border-left-color: #8b5cf6; text-align: center; background: rgba(139, 92, 246, 0.04);">
-    <h3 style="margin-top: 0; font-size: 1.3rem; color: #6d28d9;">
-      🚀 다음 단계: 기본 파지에서 다중 모달 확장으로
+  <div class="nerfies-abstract-card" style="text-align: center;">
+    <h3 style="margin-top: 0; font-size: 1.25rem; color: var(--md-typeset-color, #1e293b);">
+      다음 단계: 기본 파지에서 다중 모달 확장으로
     </h3>
     <p style="max-width: 700px; margin: 0.5rem auto 1.5rem auto; font-size: 0.95rem; color: #64748b;">
       본 기본 파지 프로젝트를 기반으로, 가상 물리 시뮬레이션(MuJoCo), 실시간 웹캠 비전 원격 조작, 그리고 0.2ms 오차의 음악 동기화 안무까지 확장 개발한 최종 쇼케이스 글을 확인해 보세요.
     </p>
-    <a href="2026-10-14-tri-hand-extension.md" class="nerfies-btn" style="background: #6d28d9;">
+    <a href="2026-10-14-tri-hand-extension.md" class="nerfies-btn">
       tri-hand-extension 프로젝트 쇼케이스 보러가기 ➡️
     </a>
   </div>

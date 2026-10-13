@@ -896,7 +896,7 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
       BibTeX
     </a>
-    <a href="2026-10-14-tri-hand-basic.md" class="nerfies-btn secondary" style="background: rgba(37, 99, 235, 0.08); color: #2563eb !important; border-color: rgba(37, 99, 235, 0.25);">
+    <a href="2026-10-14-tri-hand-basic.md" class="nerfies-btn secondary">
       ⬅️ Basic Project
     </a>
   </div>
@@ -929,7 +929,7 @@
       본 프로젝트 <code>tri_hand</code>는 기존 <strong>로봇손 파지(Grasping) 연구에서 한 걸음 더 나아가</strong>, 3지 다관절(7-DoF) 로봇손을 활용해 <strong>"시뮬레이션에서 충분히 검증하지 않은 코드는 실물 로봇에 넣지 않는다"</strong>는 원칙을 바탕으로 개발을 확장했습니다.
       가상 시뮬레이션(Digital Twin)부터 실물 하드웨어 배포(Sim-to-Real), 비전 기반 실시간 원격 조작(Teleoperation), 그리고 음악 비트 동기화 제어(Choreography)까지 이어지는 전체 엔지니어링 제어 체계를 단계별로 구축했습니다.
     </p>
-    <hr style="border: 0; border-top: 1px solid rgba(37, 99, 235, 0.2); margin: 1.2rem 0;">
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 1.2rem 0;">
     <h4 style="margin: 0 0 0.8rem 0; font-size: 1.05rem; color: var(--md-typeset-color, #1e293b);">🌟 핵심 엔지니어링 성과</h4>
     <ul style="margin-bottom: 0; padding-left: 1.2rem;">
       <li><strong>시각 메쉬와 충돌체 분리 설계</strong>: 겉모양을 보여주는 정밀 메쉬와 물리 계산용 단순 충돌체를 따로 설계해, 시뮬레이션 연산이 튀는 현상과 자체 충돌(Self-Collision)을 방지했습니다.</li>
@@ -1026,8 +1026,8 @@
         <li><strong>관절 회전 방향 통일</strong>: 위쪽 손가락(3관절)과 아래쪽 손가락 2개(각 2관절)의 서로 다른 회전 방향 기준을 하나의 좌표계 규칙으로 맞췄습니다.</li>
       </ul>
     </div>
-    <div class="nerfies-phase-media" style="background: #0f172a; padding: 1.5rem; text-align: center; color: #38bdf8;">
-      <pre style="text-align: left; background: transparent; margin: 0; font-size: 0.78rem; color: #94a3b8;"><code>&lt;!-- MJCF Dual-Layer Design --&gt;
+    <div class="nerfies-phase-media" style="padding: 1.2rem; background: var(--md-code-bg-color, #f8fafc); border: 1px solid #e2e8f0;">
+      <pre style="text-align: left; background: transparent; margin: 0; font-size: 0.8rem; color: var(--md-typeset-color, #334155); line-height: 1.45;"><code>&lt;!-- MJCF Dual-Layer Design --&gt;
 &lt;!-- 1. Visual Only (No Contact) --&gt;
 &lt;geom type="mesh" mesh="finger_vis" 
       group="1" contype="0" conaffinity="0"/&gt;
@@ -1035,8 +1035,8 @@
 &lt;!-- 2. Physics Collision Primitive --&gt;
 &lt;geom type="capsule" size="0.012 0.025" 
       group="0" contype="1" conaffinity="1"/&gt;</code></pre>
-      <div style="margin-top: 1rem; font-size: 0.85rem; color: #cbd5e1;">
-        ✨ <em>Collision Primitives Encapsulation</em>
+      <div style="margin-top: 0.8rem; font-size: 0.8rem; color: #64748b; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 0.5rem;">
+        <em>Collision Primitives Encapsulation (MuJoCo)</em>
       </div>
     </div>
   </div>
@@ -1048,35 +1048,35 @@
 <div class="nerfies-section">
   <h2 class="nerfies-sec-title">Phase 2: Hardware Bring-Up &amp; Sim-to-Real</h2>
   <div class="nerfies-phase-grid reversed">
-    <div class="nerfies-phase-media" style="background: #0f172a; padding: 1.5rem; color: #f8fafc;">
-      <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.8rem; color: #38bdf8; text-align: center;">
+    <div class="nerfies-phase-media" style="padding: 1.2rem; background: var(--md-code-bg-color, #ffffff); border: 1px solid #e2e8f0;">
+      <div style="font-weight: 700; font-size: 0.92rem; margin-bottom: 0.8rem; color: var(--md-typeset-color, #1e293b); text-align: center;">
         비대칭 관절 안전 가동 범위 (safe_range)
       </div>
-      <table style="width: 100%; font-size: 0.8rem; color: #cbd5e1; border-collapse: collapse;">
+      <table class="nerfies-specs-table" style="margin: 0; font-size: 0.82rem;">
         <thead>
-          <tr style="border-bottom: 1px solid #334155; text-align: left;">
-            <th style="padding: 6px;">자세 상태</th>
-            <th style="padding: 6px;">j1 (기저 관절)</th>
-            <th style="padding: 6px;">j2 (말단 관절)</th>
-            <th style="padding: 6px;">기구학적 설계 목적</th>
+          <tr>
+            <th>자세 상태</th>
+            <th>j1 (기저)</th>
+            <th>j2 (말단)</th>
+            <th>기구학적 설계 목적</th>
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom: 1px solid #1e293b;">
-            <td style="padding: 6px; color: #f43f5e; font-weight: bold;">Q_CLOSE</td>
+          <tr>
+            <td><strong>Q_CLOSE</strong></td>
             <td>0.3 rad</td>
             <td>1.2 rad</td>
             <td>손가락 간 맞물림 및 내부 충돌 방지</td>
           </tr>
           <tr>
-            <td style="padding: 6px; color: #38bdf8; font-weight: bold;">Q_OPEN</td>
+            <td><strong>Q_OPEN</strong></td>
             <td>1.2 rad</td>
             <td>0.3 rad</td>
             <td>프레임 기계적 하드스톱 간섭 방어</td>
           </tr>
         </tbody>
       </table>
-      <div style="margin-top: 0.8rem; font-size: 0.78rem; color: #94a3b8; text-align: center;">
+      <div style="margin-top: 0.8rem; font-size: 0.78rem; color: #64748b; text-align: center;">
         0 rad(곧게 편 자세)을 가동 한계가 아닌 중심 기준점(Neutral)으로 설정
       </div>
     </div>
@@ -1173,25 +1173,25 @@
 <!-- ========================================== -->
 <div class="nerfies-section">
   <h2 class="nerfies-sec-title">Safety Guardrails &amp; Static Verifier</h2>
-  <div class="nerfies-abstract-card" style="border-left-color: #10b981;">
-    <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--md-typeset-color, #1e293b);">
+  <div class="nerfies-abstract-card">
+    <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--md-typeset-color, #1e293b);">
       실물 구동 전 자동 사전 검증 (<code>validate.py</code>)
     </h3>
     <p>
       동작을 설계할 때 실수하더라도 실제 로봇에 무리한 힘이나 위험한 신호가 전달되지 않도록, 전체 움직임을 사전에 시뮬레이션으로 전수 검사하는 스크립트(<code>validate.py</code>)를 적용했습니다.
     </p>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem;">
-      <div style="background: rgba(16, 185, 129, 0.08); padding: 0.9rem; border-radius: 8px;">
-        <strong style="color: #059669;">1. 속도 상한 검사</strong><br>
-        <small style="color: #64748b;">모든 관절 회전 속도가 안전 기준(3.0 rad/s) 이하인지 전 구간 검사</small>
+    <div class="nerfies-subcard-grid">
+      <div class="nerfies-subcard">
+        <div class="nerfies-subcard-title">1. 속도 상한 검사</div>
+        <p class="nerfies-subcard-desc">모든 관절 회전 속도가 안전 기준(3.0 rad/s) 이하인지 전 구간 검사</p>
       </div>
-      <div style="background: rgba(16, 185, 129, 0.08); padding: 0.9rem; border-radius: 8px;">
-        <strong style="color: #059669;">2. 박자 정렬 확인</strong><br>
-        <small style="color: #64748b;">음악 마디와 비트에 맞춰 관절 동작이 제때 일어나는지 검사</small>
+      <div class="nerfies-subcard">
+        <div class="nerfies-subcard-title">2. 박자 정렬 확인</div>
+        <p class="nerfies-subcard-desc">음악 마디와 비트에 맞춰 관절 동작이 제때 일어나는지 검사</p>
       </div>
-      <div style="background: rgba(16, 185, 129, 0.08); padding: 0.9rem; border-radius: 8px;">
-        <strong style="color: #059669;">3. 사전 충돌 검사</strong><br>
-        <small style="color: #64748b;">화면 없이 빠르게 시뮬레이션을 돌려 손가락끼리 부딪히는 곳이 없는지(0건) 사전 확인</small>
+      <div class="nerfies-subcard">
+        <div class="nerfies-subcard-title">3. 사전 충돌 검사</div>
+        <p class="nerfies-subcard-desc">화면 없이 빠르게 시뮬레이션을 돌려 손가락 간 충돌이 0건임을 확인</p>
       </div>
     </div>
   </div>
