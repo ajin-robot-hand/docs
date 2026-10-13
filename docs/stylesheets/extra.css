@@ -1,0 +1,500 @@
+/* ==========================================================================
+   Nerfies / SayCan Academic Project Page Styles for MkDocs Material
+   Scoped under .nerfies-wrapper to prevent theme collisions
+   ========================================================================== */
+
+.nerfies-wrapper {
+  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--md-typeset-color, #2c3e50);
+  line-height: 1.6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 0 3rem 0;
+}
+
+/* Hero Section */
+.nerfies-hero {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem 1rem;
+}
+
+.nerfies-title {
+  font-size: 2.3rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem !important;
+  color: var(--md-typeset-color, #1e293b);
+  border-bottom: none !important;
+}
+
+.nerfies-subtitle {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto 1.8rem auto;
+  line-height: 1.5;
+}
+
+/* Authors & Affiliations */
+.nerfies-authors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.nerfies-author a {
+  color: #2563eb !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.nerfies-author a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: underline;
+}
+
+.nerfies-affiliations {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Action Buttons (Pill-shaped) */
+.nerfies-btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.nerfies-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  background-color: #1e293b;
+  color: #ffffff !important;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.nerfies-btn:hover {
+  background-color: #334155;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  color: #ffffff !important;
+}
+
+.nerfies-btn.secondary {
+  background-color: #f1f5f9;
+  color: #1e293b !important;
+  border: 1px solid #cbd5e1;
+}
+
+.nerfies-btn.secondary:hover {
+  background-color: #e2e8f0;
+  color: #0f172a !important;
+}
+
+[data-md-color-scheme="slate"] .nerfies-btn.secondary {
+  background-color: #334155;
+  color: #f8fafc !important;
+  border-color: #475569;
+}
+[data-md-color-scheme="slate"] .nerfies-btn.secondary:hover {
+  background-color: #475569;
+}
+
+/* Teaser Video / Split Viewer */
+.nerfies-teaser {
+  margin: 1.5rem 0 2.5rem 0;
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.nerfies-split-screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .nerfies-split-screen {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nerfies-media-box {
+  position: relative;
+  background: #1e293b;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.nerfies-media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nerfies-media-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  color: #38bdf8;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  z-index: 2;
+}
+
+.nerfies-caption {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+/* Academic Sections */
+.nerfies-section {
+  margin: 3.5rem 0;
+}
+
+.nerfies-sec-title {
+  font-size: 1.7rem !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-bottom: 1.8rem !important;
+  position: relative;
+  border-bottom: none !important;
+}
+
+.nerfies-sec-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #2563eb;
+  margin: 0.6rem auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Abstract Box */
+.nerfies-abstract-card {
+  background: var(--md-code-bg-color, #f8fafc);
+  border-left: 4px solid #2563eb;
+  border-radius: 0 12px 12px 0;
+  padding: 1.8rem 2.2rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+/* Metric / Stat Cards Grid */
+.nerfies-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .nerfies-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nerfies-metric-card {
+  background: var(--md-code-bg-color, #ffffff);
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.6rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nerfies-metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+[data-md-color-scheme="slate"] .nerfies-metric-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.nerfies-metric-val {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2563eb;
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+[data-md-color-scheme="slate"] .nerfies-metric-val {
+  color: #60a5fa;
+}
+
+.nerfies-metric-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--md-typeset-color, #1e293b);
+  margin-bottom: 0.3rem;
+}
+
+.nerfies-metric-desc {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Pipeline Interactive Diagram Box */
+.nerfies-pipeline-card {
+  background: var(--md-code-bg-color, #ffffff);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+[data-md-color-scheme="slate"] .nerfies-pipeline-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.nerfies-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .nerfies-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .nerfies-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nerfies-step-item {
+  background: rgba(37, 99, 235, 0.04);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: left;
+  position: relative;
+}
+
+.nerfies-step-num {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  margin-bottom: 0.6rem;
+}
+
+.nerfies-step-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--md-typeset-color, #1e293b);
+}
+
+.nerfies-step-body {
+  font-size: 0.83rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+/* Deep-dive 2-Col Layout */
+.nerfies-phase-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+@media (max-width: 850px) {
+  .nerfies-phase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nerfies-phase-grid.reversed {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+@media (max-width: 850px) {
+  .nerfies-phase-grid.reversed {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nerfies-phase-media {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .nerfies-phase-media {
+  border-color: #334155;
+}
+
+/* BibTeX Box */
+.nerfies-bibtex-block {
+  background: #1e293b !important;
+  color: #e2e8f0 !important;
+  padding: 1.2rem !important;
+  border-radius: 10px !important;
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace !important;
+  font-size: 0.85rem !important;
+  overflow-x: auto;
+  border: 1px solid #334155;
+}
+
+/* ==========================================================================
+   Responsive Video Embeds & Video Gallery Grid
+   ========================================================================== */
+
+.nerfies-video-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.nerfies-video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.nerfies-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.8rem 0;
+}
+
+@media (max-width: 768px) {
+  .nerfies-video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nerfies-video-card {
+  background: var(--md-code-bg-color, #ffffff);
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.nerfies-video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+[data-md-color-scheme="slate"] .nerfies-video-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.nerfies-video-meta {
+  padding: 1rem 1.2rem;
+  flex: 1;
+}
+
+.nerfies-video-meta h4 {
+  margin: 0 0 0.4rem 0 !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: var(--md-typeset-color, #0f172a);
+}
+
+.nerfies-video-meta p {
+  margin: 0 !important;
+  font-size: 0.85rem !important;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+/* Hardware Specs Table */
+.nerfies-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+}
+
+.nerfies-specs-table th {
+  background: rgba(37, 99, 235, 0.08);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid #2563eb;
+}
+
+.nerfies-specs-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .nerfies-specs-table th {
+  background: rgba(37, 99, 235, 0.15);
+}
+
+[data-md-color-scheme="slate"] .nerfies-specs-table td {
+  border-bottom-color: #334155;
+}
