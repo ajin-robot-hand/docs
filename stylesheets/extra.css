@@ -202,20 +202,18 @@
   border-bottom: none !important;
 }
 
-/* Abstract Box: Clean neutral styling without loud left borders */
+/* Clean Content & Abstract: Natural typography without heavy borders */
+.nerfies-content,
 .nerfies-abstract-card {
-  background: var(--md-code-bg-color, #f8fafc);
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1.8rem 2.2rem;
   font-size: 1.02rem;
   line-height: 1.8;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  color: var(--md-typeset-color, #334155);
+  margin: 1.5rem 0;
 }
 
+[data-md-color-scheme="slate"] .nerfies-content,
 [data-md-color-scheme="slate"] .nerfies-abstract-card {
-  background: #1e293b;
-  border-color: #334155;
+  color: #cbd5e1;
 }
 
 /* Metric / Stat Cards Grid */
@@ -277,19 +275,19 @@
   line-height: 1.4;
 }
 
-/* Pipeline Interactive Diagram Box */
+/* Pipeline & Section Content Container: Transparent and unboxed */
 .nerfies-pipeline-card {
-  background: var(--md-code-bg-color, #ffffff);
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 1.5rem 0;
+  box-shadow: none;
 }
 
 [data-md-color-scheme="slate"] .nerfies-pipeline-card {
-  background: #1e293b;
-  border-color: #334155;
+  background: transparent;
+  border-color: transparent;
 }
 
 .nerfies-steps-grid {
@@ -311,17 +309,25 @@
 }
 
 .nerfies-step-item {
-  background: var(--md-code-bg-color, #f8fafc);
+  background: var(--md-code-bg-color, #ffffff);
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1.2rem;
+  border-radius: 10px;
+  padding: 1.1rem;
   text-align: left;
   position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nerfies-step-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 [data-md-color-scheme="slate"] .nerfies-step-item {
   background: #1e293b;
   border-color: #334155;
+  box-shadow: none;
 }
 
 .nerfies-step-num {
@@ -481,32 +487,44 @@
   line-height: 1.45;
 }
 
-/* Hardware Specs Table */
+/* Hardware Specs Table: Standalone elegant card-like table */
 .nerfies-specs-table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 1.2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
   font-size: 0.9rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .nerfies-specs-table th {
-  background: var(--md-code-bg-color, #f1f5f9);
+  background: var(--md-code-bg-color, #f8fafc);
   color: var(--md-typeset-color, #1e293b);
-  padding: 10px 14px;
+  padding: 12px 16px;
   text-align: left;
   font-weight: 700;
-  border-bottom: 2px solid #cbd5e1;
-}
-
-.nerfies-specs-table td {
-  padding: 10px 14px;
   border-bottom: 1px solid #e2e8f0;
 }
 
+.nerfies-specs-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nerfies-specs-table tr:last-child td {
+  border-bottom: none;
+}
+
+[data-md-color-scheme="slate"] .nerfies-specs-table {
+  border-color: #334155;
+}
+
 [data-md-color-scheme="slate"] .nerfies-specs-table th {
-  background: #334155;
+  background: #1e293b;
   color: #f8fafc;
-  border-bottom-color: #475569;
+  border-bottom-color: #334155;
 }
 
 [data-md-color-scheme="slate"] .nerfies-specs-table td {
