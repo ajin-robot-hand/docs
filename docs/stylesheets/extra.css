@@ -15,26 +15,34 @@
 /* Hero Section */
 .nerfies-hero {
   text-align: center;
-  padding: 2rem 1rem 1.5rem 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 
 .nerfies-title {
-  font-size: 2.3rem !important;
-  font-weight: 800 !important;
-  line-height: 1.25 !important;
-  letter-spacing: -0.02em;
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.015em;
   margin-bottom: 0.8rem !important;
   color: var(--md-typeset-color, #1e293b);
   border-bottom: none !important;
+  word-break: keep-all;
+}
+
+@media (max-width: 600px) {
+  .nerfies-title {
+    font-size: 1.35rem !important;
+  }
 }
 
 .nerfies-subtitle {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: #64748b;
-  max-width: 800px;
-  margin: 0 auto 1.8rem auto;
-  line-height: 1.5;
+  max-width: 760px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+  word-break: keep-all;
 }
 
 /* Authors & Affiliations */
@@ -42,10 +50,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  font-size: 1.05rem;
+  gap: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .nerfies-author a {
@@ -63,8 +71,8 @@
 
 .nerfies-affiliations {
   color: #64748b;
-  font-size: 0.95rem;
-  margin-bottom: 1.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Action Buttons (Pill-shaped) */
@@ -190,25 +198,26 @@
 
 /* Academic Sections */
 .nerfies-section {
-  margin: 3.5rem 0;
+  margin: 3rem 0;
 }
 
 .nerfies-sec-title {
-  font-size: 1.7rem !important;
+  font-size: 1.35rem !important;
   font-weight: 700 !important;
   text-align: center;
-  margin-bottom: 1.8rem !important;
+  margin-bottom: 1.4rem !important;
   color: var(--md-typeset-color, #0f172a);
   border-bottom: none !important;
+  word-break: keep-all;
 }
 
 /* Clean Content & Abstract: Natural typography without heavy borders */
 .nerfies-content,
 .nerfies-abstract-card {
-  font-size: 1.02rem;
-  line-height: 1.8;
+  font-size: 0.92rem;
+  line-height: 1.75;
   color: var(--md-typeset-color, #334155);
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
 }
 
 [data-md-color-scheme="slate"] .nerfies-content,
@@ -234,7 +243,7 @@
   background: var(--md-code-bg-color, #ffffff);
   border: 1px solid #e2e8f0;
   border-radius: 14px;
-  padding: 1.6rem 1.2rem;
+  padding: 1.4rem 1rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -251,11 +260,11 @@
 }
 
 .nerfies-metric-val {
-  font-size: 2.2rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: var(--md-typeset-color, #0f172a);
   line-height: 1.1;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 [data-md-color-scheme="slate"] .nerfies-metric-val {

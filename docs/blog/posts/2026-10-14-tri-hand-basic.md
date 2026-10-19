@@ -87,19 +87,19 @@ authors:
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; margin: 1.5rem 0 0.5rem 0;" markdown="1">
 <div style="text-align: center;" markdown="1">
 
-![평면 물체 접촉 및 안정적 파지 (flat)](images/flat.jpg){ style="width: 100%; max-height: 280px; object-fit: contain; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); background-color: #f8fafc;" }
+![평면 물체 파지 (flat)](images/flat.jpg){ style="width: 100%; max-height: 280px; object-fit: contain; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); background-color: #f8fafc;" }
 
 <span style="display: block; margin-top: 0.5rem; font-size: 0.85rem; color: #64748b; font-weight: 500;">
-  ▲ 평면 물체 접촉 및 안정적 파지 (flat)
+  ▲ 평면 물체 파지 (flat)
 </span>
 
 </div>
 <div style="text-align: center;" markdown="1">
 
-![3차원 회전 검증 (rotation)](images/rotation.jpg){ style="width: 100%; max-height: 280px; object-fit: contain; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); background-color: #f8fafc;" }
+![회전 시 파지 유지 (rotation)](images/rotation.jpg){ style="width: 100%; max-height: 280px; object-fit: contain; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); background-color: #f8fafc;" }
 
 <span style="display: block; margin-top: 0.5rem; font-size: 0.85rem; color: #64748b; font-weight: 500;">
-  ▲ 3차원 회전 시 무낙하 유지 검증 (rotation)
+  ▲ 회전 시 파지 유지 (rotation)
 </span>
 
 </div>
