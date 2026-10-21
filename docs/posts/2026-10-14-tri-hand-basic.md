@@ -2,6 +2,7 @@
 title: "3지 다관절 로봇손의 안정적 물체 파지"
 description: "일상 물체 3종(휴지심 38g, 물통 172g, 상자 52g~305g)을 대상으로, MuJoCo 가상 검증과 두꺼운 실리콘 면 접촉 설계를 통해 구현한 3-Finger 로봇손 파지 메커니즘 및 실물 검증"
 date: 2026-10-14
+slug: tri-hand-basic
 categories:
   - yeonjunky
   - carryplz
@@ -309,7 +310,7 @@ flowchart LR
     <p style="max-width: 700px; margin: 0.5rem auto 1.5rem auto; font-size: 0.95rem; color: #64748b;">
       본 기본 파지 프로젝트를 기반으로, 가상 물리 시뮬레이션(MuJoCo), 실시간 웹캠 비전 원격 조작, 그리고 0.2ms 오차의 음악 동기화 안무까지 확장 개발한 최종 쇼케이스 글을 확인해 보세요.
     </p>
-    <a href="2026-10-14-tri-hand-extension.md" class="nerfies-btn">
+    <a href="../tri-hand-extension/" class="nerfies-btn">
       tri-hand-extension 프로젝트 쇼케이스 보러가기 ➡️
     </a>
   </div>

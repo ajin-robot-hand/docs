@@ -2,6 +2,7 @@
 title: "로봇손 파지 프로젝트의 확장: 시뮬레이션, 실시간 비전 조작, 오디오 동기화 안무"
 description: "로봇손 프로젝트를 확장하여 가상 시뮬레이션, 실시간 비전 텔레옵, 음악 동기화 안무까지 구현한 tri_hand 개발기"
 date: 2026-10-14
+slug: tri-hand-extension
 categories:
   - yeonjunky
   - carryplz
@@ -546,7 +547,7 @@ MuJoCo MJCF 이중 레이어 모델링 (<code>hand.xml</code>)
     <p style="max-width: 700px; margin: 0.5rem auto 1.5rem auto; font-size: 0.95rem; color: #64748b;">
       일상 물체 3종(휴지심, 물통, 상자) 대상의 접촉면 설계와 기본 파지 메커니즘을 다룬 선행 프로젝트 글도 함께 확인해 보세요.
     </p>
-    <a href="2026-10-14-tri-hand-basic.md" class="nerfies-btn secondary">
+    <a href="../tri-hand-basic/" class="nerfies-btn secondary">
       ⬅️ tri-hand-basic 프로젝트 보러가기
     </a>
   </div>
