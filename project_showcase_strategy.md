@@ -154,7 +154,7 @@ SayCan과 동일한 수준의 미려한 웹페이지를 빠르고 완성도 높�
   - [x] CAD 메쉬 ↔ 충돌체 분리 기구학 도식화 완료
 - [x] **웹 템플릿 구축**:
   - [x] MkDocs Material 호환 Scoped Nerfies 스타일시트 구성 (`extra.css`)
-  - [x] 쇼케이스 포스트 원고 작성 (`docs/blog/posts/2026-10-14-tri-hand-extension.md`)
+  - [x] 쇼케이스 포스트 원고 작성 (`docs/posts/2026-10-14-tri-hand-extension.md`)
   - [x] End-to-End Mermaid 파이프라인 및 가동 범위 표 구현
 - [x] **배포 및 검증**:
   - [x] GitHub Pages 배포 연동 (`.github/workflows/deploy.yml` + `extra_css`)

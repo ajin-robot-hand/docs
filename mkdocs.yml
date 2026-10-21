@@ -36,7 +36,7 @@ theme:
 plugins:
   - search
   - blog:
-      blog_dir: blog
+      blog_dir: .
       blog_toc: true
       post_date_format: long
       post_url_format: "{date}/{slug}"
@@ -73,9 +73,8 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - 홈: index.md
-  - 블로그:
-      - blog/index.md
+  - 블로그: index.md
+  - 소개: intro.md
 
 extra_css:
   - stylesheets/extra.css
